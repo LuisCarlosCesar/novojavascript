@@ -11,22 +11,20 @@ const images = [
 
 const containerItens = document.querySelector("#container-itens");
 
-
-
 const loadImages = (images, container) => {
    images.forEach(image => {
         container.innerHTML +=`
         <div class="item">
             <img src='${image.url}'
         </div>`
-   });
+   })
  }
 
 loadImages(images, containerItens);
 
 let itens = document.querySelectorAll(".item");
 
-const previus = () => {
+const previous = () => {
     containerItens.appendChild(itens[0]);
     itens = document.querySelectorAll(".item");
 }
