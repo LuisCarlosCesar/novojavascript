@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-slide {
+    display: flex;
+    justify-content: space-between;/* as caixas que estao dentro vao ficar um de cada lado*/
+    width: 50vw;
+    height: 50vh;
+    background-color: black;
+    margin: 20vh auto;/*alinhar container onde vai ficar as imagens*/
+    border-radius: 10px;
+    box-shadow: 0 20px 30px #00000088;
+    border: 5px solid black ;
+}
+
+.container-itens{
+    position: absolute;/*ocupa toda area do container*/
+    display: flex; /*para as imagens ficarem uma ao lado da outra*/
+    width: 50vw;
+    height: 50vh;
+   /* background-color: red;*/
+    border-radius: 10px;
+   overflow: hidden;
+}
+
+.item {
+    width: 50vw;
+    height: 50vh;
+    transition: all 1s;
+}
+
+.item:first-child{
+    margin-left: -100%;
+}
+
+.item img{
+    width: 50vw;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+.action-button{
+    font: bold 30px sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;/*centraliza no meio da caixa*/
+    width: 50px;
+    color: rgba(0, 0, 0, 0);/*tranparente*/
+    user-select: none;/*nao aparece o i par ser selecionado*/
+    z-index: 1;/*para o botao vir para frente*/
+}
+
+.action-button:hover{
+    color: white;
+    background-color: #00000055;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
