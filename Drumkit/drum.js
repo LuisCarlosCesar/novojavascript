@@ -28,15 +28,16 @@ const tocarSom = (letra) => {
     audio.play();
 }
 
+const adicionarEfeito = (letra) => document.getElementById(letra)
+.classList.toggle('active');    
+
+
 const removerEfeito = (letra) =>     {
     const div = document.getElementById(letra);
     const removeActive = () => div.classList.remove('active');
     div.addEventListener('transitionend', removeActive);
 }
-
-
-        const adicionarEfeito = (letra) => document.getElementById(letra)
-        .classList.add('active');        
+           
 
 const ativarDiv = (evento) => {
     /*let letra = '';
@@ -60,4 +61,4 @@ exibir(sons);
 document.getElementById('icontainer')
         .addEventListener('click', ativarDiv);
 
-
+ window.addEventListener('keyup',ativarDiv);

@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@ body {
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    font-family: 'open sans', sans-serif;
+    font-family: 'open Sans', sans-serif;
 }
 
 main {
@@ -21,7 +23,9 @@ main {
     color: #ffcc00;
     margin: 20vh auto;
     font-size: calc(5vw + 20px);
-    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black;
+    text-shadow:    0 0 10px black, 
+                    0 0 10px black, 
+                    0 0 10px black;
 }
 
 .container {
@@ -30,7 +34,7 @@ main {
     height: 100px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;/*pada dar espaco entre eles*/
+    flex-wrap: wrap;/*para dar espaco entre eles*/
     align-items: center;
     justify-content: space-around;
     gap: 15px;
@@ -42,9 +46,9 @@ main {
     height: 100px;
     align-items: center;
     justify-content: center;
-    background-color: #000000bb;
+    background-color: #000000BB;
     color: white;
-    font-size: calc(3vh + 20px);
+    font-size: calc(3vw + 20px);
     border: 3px solid white;
     user-select: none;/*tira a marcacao na letra quando clicado*/
     cursor: pointer;
